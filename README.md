@@ -2,15 +2,26 @@
 # Zeke W. MSc Project Code
 This repo contains the code library for the paper "Burst Coding Despite Unimodal Interval Distributions" by Williams et al.
 
+## Requirements
+
+Python 3.6.6 was used with anaconda 4.4.0 for the project. 
+
+A list of all python libraries contained in the environment used on the project is provided in the file requirements.txt. However, not all of these libraries are needed for this project. I recommend checking the imports in each script and then using requirements.txt to be sure the correct version is used.
+
 ## Folders
 
 ### Results
 Folder containing data required for plots. Labeled by figure number from paper.
 
-##Files
+**This is not included in the git repo. Email the paper authors to get access.**
+
+## Files
+
+### requirements.txt
+Pip freeze of anaconda environment used for project. **Note that not all the libraries listed are necessary for the project!**
 
 ### plot_figure3-6:
-Code for plotting the associated figure. Each of these require the "results" folder to be in the current workspace and some of these require extra libraries contained in this repo.
+Code for plotting the associated figure. Each of these require the results folder to be in the current workspace and some of these require extra libraries contained in this repo.
 
 ### simulate3-6
 Code to simulate model and run analysis required for the associated figure of the paper. Requires cell_params3-6, cell_models and main_functions libraries. Note that simulate5 has suffix 1, 2 and simulate6 has suffix BSRM and SRM because two different models were used in the generation of each of these figures.
@@ -40,8 +51,6 @@ Dictionary containing cell params used in cell_models code
 
 ### lba_params ("lower bound analysis")
 Dictionary containing params used in the model of decoding cell machinery and in Stein's lower bound information rate analysis.
-
-
 
 
 
